@@ -11,5 +11,6 @@ foreach ($bc->blocks as $block) {
 	printf("PrevHash: %s\n", $block->prevHash);
 	printf("Hash: %s\n", $block->hash);
 	printf("Data: %s\n", $block->data);
+	printf("PoW: %s\n", $block->validate() ? 'true' : 'false');
 	printf("\n");
 }
