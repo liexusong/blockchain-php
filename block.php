@@ -70,6 +70,6 @@ class Block
 
 		$data = $this->prepareData($this->nonce);
 
-		return substr(hash('sha256', $data), 0, $condlength) === $condition; 
+		return substr(hash('sha256', $data), 0, $condlength) === $condition;
 	}
 }
